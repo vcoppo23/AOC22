@@ -6,7 +6,7 @@ with open("/Users/vcoppo23/Desktop/AOC22/inputs/input4.txt", "r") as file:
 start = time.time()
 contains = 0
 
-
+# fixing git
 for lines in input:
     lines = lines.split(",")
     elf1 = lines[0].split("-")
