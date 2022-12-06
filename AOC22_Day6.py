@@ -6,11 +6,13 @@ with open("/Users/vcoppo23/Desktop/AOC22/inputs/input6.txt", "r") as file:
 
 
 for i in range(len(stream)):
+    ##makes code a substrting of stream 4 characters long
     code = stream[i:i+4]
-    if len(code) < 4:
-        break
+    ##makes code a set, which removes duplicates
     code = set(code)
+    ## Checking if any duplicates were removed
     if len(code) == 4:
+        ##if no duplicates were removed, then the code is the answer
         print (code,i+4)
         break
 
